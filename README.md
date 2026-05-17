@@ -19,3 +19,7 @@ In modern computer systems, protecting the integrity of important files is a cri
 The working principle of this project is based on cryptographic hashing. A hash function converts file data into a fixed-length hash value. Even a very small modification in the file, such as changing a single character, produces a completely different hash value due to the avalanche effect of cryptographic algorithms. This property makes hashing highly effective for integrity verification. The project first generates the original hash value of a selected file and stores it temporarily. Later, when the file is checked again, a new hash value is generated and compared with the original one. If both hash values match, the file integrity is maintained. If the hash values differ, the project identifies that the file has been modified or tampered with.
 
 The project is developed using the Python programming language because of its simplicity, readability, and powerful built-in libraries. The hashlib library is used for implementing SHA-256 hashing, while the os module is used to verify file existence and handle file-related operations. The file is read in binary mode (rb) to ensure accurate processing of all file types, including text files, images, PDFs, executable files, and multimedia content. To improve performance and memory efficiency, files are processed in chunks instead of loading the entire file into memory at once.
+
+#OUTPUT
+
+<img width="1311" height="337" alt="Image" src="https://github.com/user-attachments/assets/f70415fe-8178-498a-8a8e-441dbf5c9129" />
